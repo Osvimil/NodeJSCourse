@@ -1,0 +1,25 @@
+{
+  "name": "nodejsninja",
+  "version": "1.0.0",
+  "description": "whatever",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Osvimil/NodeJSCourse.git"
+  },
+  "author": "oswaldo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Osvimil/NodeJSCourse/issues"
+  },
+  "homepage": "https://github.com/Osvimil/NodeJSCourse#readme"
+}
