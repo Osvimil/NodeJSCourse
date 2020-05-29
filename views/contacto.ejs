@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <style>
+        form{
+            width:400px;
+            max-width: 100%;
+            padding:20px;
+            margin:20px auto;
+        }
+        input,label{
+            display:block;
+            margin:10px 0;
+            padding:5px;
+            width:100%;
+        }
+        inputs[type='submit']{
+            width:auto;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <%- include ('partials/nav.ejs'); %>
+    <h1>Este es el contacto de Mondtec</h1>
+    <p>For further information visit our social media</p>
+    <!--
+    <p> <%= qs.dept %> </p>
+    <p> <%= qs.nombre %> </p>
+    -->
+    <form id="contact-form" method="POST" action="/contacto">
+        <label for="who">A quién quieres contactar</label>
+        <input type="text" name="who" value="<%= qs.nombre %> ">
+        <label for="department">Qué departamento</label>
+        <input type="text" name="department" value="<%= qs.dept %>">
+        <label for="email">Qué correo</label>
+        <input type="email" name="email">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
